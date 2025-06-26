@@ -9,6 +9,7 @@ dot11 ssid <WIFIName>
 authentication open
 exit
 interface Dot11Radio 0
+encryption mode ciphers wep128
 dot11 ssid <WIFIName>
 no shutdown
 interface FastEthernet 0
