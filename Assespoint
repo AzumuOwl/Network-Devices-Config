@@ -1,1 +1,17 @@
-
+enable
+configure terminal
+hostname <name>
+interface BVI1
+ip address <IP> <Subnet Mask>
+exit
+interface Dot11Radio 0
+ssid <WIFIName>
+authentication open
+exit
+interface Dot11Radio 0
+ssid <WIFIName>
+no shutdown
+interface FastEthernet 0
+no shutdown
+exit
+copy running-config startup-config
