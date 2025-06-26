@@ -5,11 +5,11 @@ interface BVI1
 ip address <IP> <Subnet Mask>
 exit
 interface Dot11Radio 0
-ssid <WIFIName>
+dot11 ssid <WIFIName>
 authentication open
 exit
 interface Dot11Radio 0
-ssid <WIFIName>
+dot11 ssid <WIFIName>
 no shutdown
 interface FastEthernet 0
 no shutdown
