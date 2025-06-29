@@ -1,7 +1,8 @@
 enable
 configure terminal
-hostname <name>
-interface <type><number>
-ip address <IP> <Subnet Mask>
+hostname Router1
+
+interface fa0/0
+ip address 192.168.1.1 255.255.255.0
 no shutdown
 exit
