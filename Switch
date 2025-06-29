@@ -1,6 +1,6 @@
 enable
 configure terminal
-hostname <name>
+hostname Switch1
 
 vlan 10
  name VLAN10
@@ -17,5 +17,3 @@ interface fa0/2
 
 interface fa0/24
  switchport mode trunk
-
-exit
