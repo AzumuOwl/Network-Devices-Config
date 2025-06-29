@@ -1,18 +1,22 @@
 enable
 configure terminal
-hostname <name>
+hostname AP1
+
 interface BVI1
-ip address <IP> <Subnet Mask>
+ip address 192.168.10.1 255.255.255.0
 exit
+
 interface Dot11Radio 0
 dot11 ssid <WIFIName>
 authentication open
 exit
+
 interface Dot11Radio 0
 encryption mode ciphers wep128
 dot11 ssid <WIFIName>
 no shutdown
+exit
+
 interface FastEthernet 0
 no shutdown
 exit
-copy running-config startup-config
