@@ -3,20 +3,19 @@ configure terminal
 hostname AP1
 
 interface BVI1
-ip address 192.168.10.1 255.255.255.0
+ ip address 192.168.10.1 255.255.255.0
+exit
+
+dot11 ssid Manosh
+ authentication open
+ guest-mode
 exit
 
 interface Dot11Radio 0
-dot11 ssid <WIFIName>
-authentication open
+ ssid Manosh
+ no shutdown
 exit
 
-interface Dot11Radio 0
-encryption mode ciphers wep128
-dot11 ssid <WIFIName>
-no shutdown
-exit
-
-interface FastEthernet 0
-no shutdown
+interface GigabitEthernet0
+ no shutdown
 exit
